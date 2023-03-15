@@ -7,7 +7,15 @@
 // якщо неправильна кількість - червоним.
 
 
+
+
+
+
+
 const inputEl = document.querySelector('#validation-input');
+
+console.log(inputEl.dataset.type); //wrap
+
 
 // inputEl.classList.add(valid);
 
