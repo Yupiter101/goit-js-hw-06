@@ -12,3 +12,40 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+//  ===== Завдання ===== 
+
+  // Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+  //  Для створення розмітки використовуй шаблонні рядки і метод insertAdjacentHTML().
+  // Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
+  // Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
+
+
+// ===== Рішення ======
+
+  // Берем ссилку на елемент ДОМ
+    const galleryListEl = document.querySelector('.gallery');
+
+  // Створюєм усі елементи li по Шаблону
+    const itemsEl = images.map(({url, alt}) => {
+      return `<li><img class="gallery-img" src="${url}" alt="${alt}"></li>`;
+    }).join("");
+
+  // Шаблон рядка
+    // const itemEl = `<li><img class="gallery-img" src="${images[1].url}" alt="${images[1].alt}"></li>`;
+
+
+  // Додаємо усі елементи в ДОМ gallery
+    galleryListEl.insertAdjacentHTML('beforeend', itemsEl);
+
+  
+
+
+
+  // ===== Чорновик ======
+
+    // Створюєм один елемент li 
+    // const itemEl = `<li><img class="gallery-img" src="${images[1].url}" alt="${images[1].alt}"></li>`;
+
+    // Додаємо елемент в gallery
+    // galleryListEl.insertAdjacentHTML('beforeend', itemEl);
