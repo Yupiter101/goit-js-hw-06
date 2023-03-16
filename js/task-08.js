@@ -7,6 +7,9 @@
 // а значення поля - значенням властивості. Для доступу до елементів форми використовуй властивість elements.
 // Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
 
+
+
+
 const formEl = document.querySelector('form');
 // console.log(form);
 
@@ -41,7 +44,6 @@ function onCheckSubmit(event) {
 
 
 
-
 // formLogin.addEventListener('submit', event => {
 //     event.preventDefault();
 //      const formDate = new FormData(event.currentTarget)
@@ -53,6 +55,3 @@ function onCheckSubmit(event) {
 //           }
 //      })
 //     });
-
-
-// console.log(555);
